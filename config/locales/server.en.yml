@@ -1,6 +1,5 @@
 en:
   site_settings:
-    spoiler_ui_enabled: 'Show Insert Spoiler button on composer window?'
     codefence_buttons_enabled: 'Show code fences buttons in composer toolbar?'
     openhab_cf_items_button_enabled: 'Show openHAB *.items syntax code fences button in composer toolbar?'
     openhab_cf_rules_button_enabled: 'Show openHAB *.rules syntax code fences button in composer toolbar?'

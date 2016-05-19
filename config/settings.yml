@@ -1,7 +1,4 @@
 plugins:
-  spoiler_ui_enabled:
-    default: true
-    client: true
   codefence_buttons_enabled:
     default: true
     client: true
