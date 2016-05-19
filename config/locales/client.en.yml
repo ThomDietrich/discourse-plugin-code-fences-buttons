@@ -3,3 +3,9 @@ en:
     composer:
       spoiler_ui_button_title: "Insert Spoiler"
       spoiler_ui_default_text: "spoiler text"
+      cf_ohitems_button_title: "Insert openHAB *.items code fence"
+      cf_ohitems_default_text: "your code goes here"
+      cf_ohrules_button_title: "Insert openHAB *.rules code fence"
+      cf_ohrules_default_text: "your code goes here"
+      cf_ohsitemap_button_title: "Insert openHAB *.sitemap code fence"
+      cf_ohsitemap_default_text: "your code goes here"

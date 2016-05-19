@@ -2,3 +2,15 @@ plugins:
   spoiler_ui_enabled:
     default: true
     client: true
+  codefence_buttons_enabled:
+    default: true
+    client: true
+  openhab_cf_items_button_enabled:
+    default: true
+    client: true
+  openhab_cf_rules_button_enabled:
+    default: true
+    client: true
+  openhab_cf_sitemap_button_enabled:
+    default: true
+    client: true
