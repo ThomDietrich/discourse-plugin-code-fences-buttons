@@ -1,29 +1,14 @@
-# Spoiler UI Plugin
-This plugin adds support for inserting a spoiler into the composer window via a UI.
+# Discourse Plugin: Toolbar Codefences Buttons
 
-Composer Window Button  
-![](https://raw.githubusercontent.com/cpradio/discourse-plugin-spoiler-ui/master/screenshot-composer.png)
+This plugin adds buttons to your comment editor toolbar for inserting codefences with language specific syntax highlighting.
 
-Admin Settings  
-![](https://raw.githubusercontent.com/cpradio/discourse-plugin-spoiler-ui/master/screenshot-admin-settings.png)
+Example:
 
-In Action  
-![](https://raw.githubusercontent.com/cpradio/discourse-plugin-spoiler-ui/master/screenshot-action.gif)
+    ``` php
+    your code goes here.
+    ```
 
-## How to Help
+## Further information
 
-- Create a PR with a new translation!
-- Log Issues
-- Submit PRs to help resolve issues
-
-## Installation
-
-Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using https://github.com/cpradio/discourse-plugin-spoiler-ui.git as the repository URL.
-
-## Authors
-
-Matthew Wilkin
-
-## License
-
-GNU GPL v2
+This plugin is based on the following, please have a look for more details:
+https://github.com/cpradio/discourse-plugin-spoiler-ui
