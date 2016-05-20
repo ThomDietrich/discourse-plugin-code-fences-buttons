@@ -1,9 +1,11 @@
 en:
   js:
     composer:
-      cf_ohitems_button_title: "Insert openHAB *.items code fence"
-      cf_ohitems_default_text: "your code goes here"
-      cf_ohrules_button_title: "Insert openHAB *.rules code fence"
-      cf_ohrules_default_text: "your code goes here"
-      cf_ohsitemap_button_title: "Insert openHAB *.sitemap code fence"
-      cf_ohsitemap_default_text: "your code goes here"
+      cfbtn_title_openhab_items: "openHAB *.items code fences"
+      cfbtn_dtext_openhab_items: "your code goes here"
+      #
+      cfbtn_title_openhab_rules: "openHAB *.rules code fences"
+      cfbtn_dtext_openhab_rules: "your code goes here"
+      #
+      cfbtn_title_openhab_sitemap: "openHAB *.sitemap code fences"
+      cfbtn_dtext_openhab_sitemap: "your code goes here"

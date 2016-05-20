@@ -1,6 +1,6 @@
-# Discourse Plugin: Toolbar Codefences Buttons
+# Discourse Plugin: Toolbar Code Fences Buttons (cfbtn)
 
-This plugin adds buttons to your comment editor toolbar for inserting codefences with language specific syntax highlighting.
+This plugin adds buttons to your Discourse composer toolbar for inserting code fences with language-specific syntax highlighting.
 
 Example:
 
@@ -10,5 +10,5 @@ Example:
 
 ## Further information
 
-This plugin is based on the following, please have a look for more details:
+This plugin is based on another plugin, please have a look for more details:
 https://github.com/cpradio/discourse-plugin-spoiler-ui

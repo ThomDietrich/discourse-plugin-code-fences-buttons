@@ -1,13 +1,13 @@
 plugins:
-  codefence_buttons_enabled:
+  cfbtn_plugin_enabled:
     default: true
     client: true
-  openhab_cf_items_button_enabled:
-    default: true
+  cfbtn_openhab_items:
+    default: false
     client: true
-  openhab_cf_rules_button_enabled:
-    default: true
+  cfbtn_openhab_rules:
+    default: false
     client: true
-  openhab_cf_sitemap_button_enabled:
-    default: true
+  cfbtn_openhab_sitemap:
+    default: false
     client: true

@@ -2,37 +2,37 @@ import {withPluginApi} from 'discourse/lib/plugin-api';
 import {onToolbarCreate} from 'discourse/components/d-editor';
 
 function addButtons(siteSettings) {
-  if (siteSettings.codefence_buttons_enabled) {
+  if (siteSettings.cfbtn_plugin_enabled) {
     //openHAB items syntax button
-    if (siteSettings.openhab_cf_items_button_enabled) {
+    if (siteSettings.cfbtn_openhab_items) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cf_ohitems_button_title",
+          id: "cfbtn_title_openhab_items",
           group: "extras",
-          icon: "file-code-o",
-          perform: e => e.applySurround('``` csv', '```', 'cf_ohitems_default_text')
+          icon: "file-text-o",
+          perform: e => e.applySurround('``` csv', '```', 'cfbtn_dtext_openhab_items')
         });
       });
     }
     //openHAB rules syntax button
-    if (siteSettings.openhab_cf_rules_button_enabled) {
+    if (siteSettings.cfbtn_openhab_rules) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cf_ohrules_button_title",
+          id: "cfbtn_title_openhab_rules",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cf_ohrules_default_text')
+          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_dtext_openhab_rules')
         });
       });
     }
     //openHAB sitemap syntax button
-    if (siteSettings.openhab_cf_sitemap_button_enabled) {
+    if (siteSettings.cfbtn_openhab_sitemap) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cf_ohsitemap_button_title",
+          id: "cfbtn_title_openhab_sitemap",
           group: "extras",
-          icon: "file-code-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cf_ohsitemap_default_text')
+          icon: "file-image-o",
+          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_dtext_openhab_sitemap')
         });
       });
     }
@@ -50,7 +50,7 @@ function initializePlugin(api) {
 }
 
 export default {
-  name: 'codefences_buttons',
+  name: 'cfbtn',
   initialize(container) {
     withPluginApi('0.1', api => initializePlugin(api), {
       noApi: () => priorToApi(container)
