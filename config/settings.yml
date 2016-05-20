@@ -1,5 +1,6 @@
 plugins:
-  cfbtn_plugin_enabled:
+  # Beware: the part before "_enable" has to be the common settings name part
+  cfbtn_enabled:
     default: true
     client: true
   cfbtn_openhab_items:

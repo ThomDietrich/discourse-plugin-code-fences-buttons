@@ -2,7 +2,7 @@ import {withPluginApi} from 'discourse/lib/plugin-api';
 import {onToolbarCreate} from 'discourse/components/d-editor';
 
 function addButtons(siteSettings) {
-  if (siteSettings.cfbtn_plugin_enabled) {
+  if (siteSettings.cfbtn_enabled) {
     //openHAB items syntax button
     if (siteSettings.cfbtn_openhab_items) {
       onToolbarCreate(toolbar => {

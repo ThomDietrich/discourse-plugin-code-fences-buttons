@@ -5,4 +5,4 @@
 # authors: Thomas Dietrich
 # url: https://github.com/ThomDietrich/discourse-plugin-code-fences-buttons
 
-enabled_site_setting :cfbtn_plugin_enabled
+enabled_site_setting :cfbtn_enabled
