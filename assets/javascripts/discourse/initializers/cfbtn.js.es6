@@ -10,7 +10,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_title_openhab_items",
           group: "extras",
           icon: "file-text-o",
-          perform: e => e.applySurround('``` csv', '```', 'cfbtn_dtext_openhab_items')
+          perform: e => e.applySurround('``` csv', '```', 'cfbtn_default_text_code')
         });
       });
     }
@@ -21,7 +21,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_title_openhab_rules",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_dtext_openhab_rules')
+          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
         });
       });
     }
@@ -32,7 +32,30 @@ function addButtons(siteSettings) {
           id: "cfbtn_title_openhab_sitemap",
           group: "extras",
           icon: "file-image-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_dtext_openhab_sitemap')
+          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
+        });
+      });
+    }
+    //javascript
+    if (siteSettings.cfbtn_javascript) {
+      onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "cfbtn_title_javascript",
+          group: "extras",
+          icon: "file-code-o",
+          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
+        });
+      });
+    }
+    //custom syntax, defined in discourse settings dialog
+    if (!siteSettings.cfbtn_custom1.length) {
+      var syntax = siteSettings.cfbtn_custom1;
+      onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: (syntax + " " + "cfbtn_title_custom1"),
+          group: "extras",
+          icon: "file-code-o",
+          perform: e => e.applySurround('\n``` ' + syntax + '\n', '\n```\n', 'cfbtn_default_text_code')
         });
       });
     }

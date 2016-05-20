@@ -11,3 +11,9 @@ plugins:
   cfbtn_openhab_sitemap:
     default: false
     client: true
+  cfbtn_javascript:
+    default: true
+    client: true
+  cfbtn_custom1:
+    default: ""
+    client: true
