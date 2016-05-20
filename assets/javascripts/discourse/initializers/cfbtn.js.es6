@@ -7,10 +7,10 @@ function addButtons(siteSettings) {
     if (siteSettings.cfbtn_openhab_items) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cfbtn_title_openhab_items",
+          id: "cfbtn_openhab_items",
           group: "extras",
           icon: "file-text-o",
-          perform: e => e.applySurround('``` csv', '```', 'cfbtn_default_text_code')
+          perform: e => e.applySurround('\n```csv\n', '\n```\n', 'cfbtn_code_default_text')
         });
       });
     }
@@ -18,10 +18,10 @@ function addButtons(siteSettings) {
     if (siteSettings.cfbtn_openhab_rules) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cfbtn_title_openhab_rules",
+          id: "cfbtn_openhab_rules",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
+          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text')
         });
       });
     }
@@ -29,10 +29,10 @@ function addButtons(siteSettings) {
     if (siteSettings.cfbtn_openhab_sitemap) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cfbtn_title_openhab_sitemap",
+          id: "cfbtn_openhab_sitemap",
           group: "extras",
           icon: "file-image-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
+          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text')
         });
       });
     }
@@ -40,22 +40,22 @@ function addButtons(siteSettings) {
     if (siteSettings.cfbtn_javascript) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "cfbtn_title_javascript",
+          id: "cfbtn_javascript",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n``` php\n', '\n```\n', 'cfbtn_default_text_code')
+          perform: e => e.applySurround('\n```javascript\n', '\n```\n', 'cfbtn_code_default_text')
         });
       });
     }
     //custom syntax, defined in discourse settings dialog
-    if (!siteSettings.cfbtn_custom1.length) {
+    if (siteSettings.cfbtn_custom1.length !== 0) {
       var syntax = siteSettings.cfbtn_custom1;
       onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: (syntax + " " + "cfbtn_title_custom1"),
+          id: ("cfbtn_custom1"),
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n``` ' + syntax + '\n', '\n```\n', 'cfbtn_default_text_code')
+          perform: e => e.applySurround('\n```' + syntax + '\n', '\n```\n', 'cfbtn_code_default_text')
         });
       });
     }

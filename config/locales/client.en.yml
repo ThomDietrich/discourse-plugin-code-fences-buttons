@@ -1,10 +1,10 @@
 en:
   js:
     composer:
-      cfbtn_default_text_code: "your code goes here"
+      cfbtn_code_default_text: "your code goes here"
       #
-      cfbtn_title_openhab_items: "openHAB *.items code fences"
-      cfbtn_title_openhab_rules: "openHAB *.rules code fences"
-      cfbtn_title_openhab_sitemap: "openHAB *.sitemap code fences"
-      cfbtn_title_javascript: "JavaScript code fences"
-      cfbtn_title_custom1: "code fences"
+      cfbtn_openhab_items_title: "openHAB *.items code fences"
+      cfbtn_openhab_rules_title: "openHAB *.rules code fences"
+      cfbtn_openhab_sitemap_title: "openHAB *.sitemap code fences"
+      cfbtn_javascript_title: "JavaScript code fences"
+      cfbtn_custom1_title: "code fences"

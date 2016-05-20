@@ -16,5 +16,5 @@ plugins:
     default: true
     client: true
   cfbtn_custom1:
-    default: ""
+    default: "   "
     client: true

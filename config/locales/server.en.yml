@@ -5,4 +5,4 @@ en:
     cfbtn_openhab_rules: 'openHAB *.rules syntax button'
     cfbtn_openhab_sitemap: 'openHAB *.sitemap syntax button'
     cfbtn_javascript: 'javascript syntax button'
-    cfbtn_custom1: 'custom syntax button'
+    cfbtn_custom1: 'custom syntax button, define your syntax (css, bash, sql, ...) or leave free to hide'
