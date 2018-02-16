@@ -10,7 +10,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_openhab_items",
           group: "extras",
           icon: "file-text-o",
-          perform: e => e.applySurround('\n```csv\n', '\n```\n', 'cfbtn_code_default_text')
+          perform: e => e.applySurround('\n```csv\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
     }
@@ -21,7 +21,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_openhab_rules",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text')
+          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
     }
@@ -32,7 +32,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_openhab_sitemap",
           group: "extras",
           icon: "file-image-o",
-          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text')
+          perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
     }
@@ -43,7 +43,7 @@ function addButtons(siteSettings) {
           id: "cfbtn_javascript",
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n```javascript\n', '\n```\n', 'cfbtn_code_default_text')
+          perform: e => e.applySurround('\n```javascript\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
     }
@@ -55,7 +55,7 @@ function addButtons(siteSettings) {
           id: ("cfbtn_custom1"),
           group: "extras",
           icon: "file-code-o",
-          perform: e => e.applySurround('\n```' + syntax + '\n', '\n```\n', 'cfbtn_code_default_text')
+          perform: e => e.applySurround('\n```' + syntax + '\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
     }
