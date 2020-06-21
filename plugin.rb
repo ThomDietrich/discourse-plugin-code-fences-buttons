@@ -6,3 +6,7 @@
 # url: https://github.com/ThomDietrich/discourse-plugin-code-fences-buttons
 
 enabled_site_setting :cfbtn_enabled
+
+register_svg_icon "fa-file-text-o" if respond_to?(:register_svg_icon)
+register_svg_icon "fa-file-code-o" if respond_to?(:register_svg_icon)
+register_svg_icon "fa-file-image-o" if respond_to?(:register_svg_icon)
