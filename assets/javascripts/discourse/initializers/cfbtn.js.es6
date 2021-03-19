@@ -31,7 +31,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_openhab_sitemap",
           group: "extras",
-          icon: "file-image-o",
+          icon: "fa-file-image",
           perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -42,7 +42,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_javascript",
           group: "extras",
-          icon: "file-code-o",
+          icon: "fa-file-code-o",
           perform: e => e.applySurround('\n```javascript\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -54,7 +54,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: ("cfbtn_custom1"),
           group: "extras",
-          icon: "file-code-o",
+          icon: "fa-file-code-o",
           perform: e => e.applySurround('\n```' + syntax + '\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
