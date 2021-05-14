@@ -9,7 +9,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_openhab_items",
           group: "extras",
-          icon: "file-text-o",
+          icon: "far-file-text-o",
           perform: e => e.applySurround('\n```csv\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -20,7 +20,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_openhab_rules",
           group: "extras",
-          icon: "file-code-o",
+          icon: "far-file-code-o",
           perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -31,7 +31,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_openhab_sitemap",
           group: "extras",
-          icon: "fa-file-image",
+          icon: "far-file-image",
           perform: e => e.applySurround('\n```php\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -42,7 +42,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_javascript",
           group: "extras",
-          icon: "fa-file-code-o",
+          icon: "far-file-code",
           perform: e => e.applySurround('\n```javascript\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
@@ -54,7 +54,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: ("cfbtn_custom1"),
           group: "extras",
-          icon: "fa-file-code-o",
+          icon: "far-file-code",
           perform: e => e.applySurround('\n```' + syntax + '\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
