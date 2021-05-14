@@ -7,6 +7,6 @@
 
 enabled_site_setting :cfbtn_enabled
 
-register_svg_icon "far-file-text" if respond_to?(:register_svg_icon)
+register_svg_icon "far-file-alt" if respond_to?(:register_svg_icon)
 register_svg_icon "far-file-code" if respond_to?(:register_svg_icon)
 register_svg_icon "far-file-image" if respond_to?(:register_svg_icon)
