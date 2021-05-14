@@ -9,7 +9,7 @@ function addButtons(siteSettings) {
         toolbar.addButton({
           id: "cfbtn_openhab_items",
           group: "extras",
-          icon: "far-file-text",
+          icon: "far-file-alt",
           perform: e => e.applySurround('\n```csv\n', '\n```\n', 'cfbtn_code_default_text', { multiline: false } )
         });
       });
